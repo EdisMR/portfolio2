@@ -11,9 +11,12 @@ export class CoverpageComponent implements OnInit {
     imageurl:string
     title:string
   }[]=[
-    {imageurl:"assets/icons/psico.svg",title:"Continuous Learning Continuous Learning Continuous Learning Continuous Learning"},
-    {imageurl:"assets/icons/check.svg",title:"Eficiencia y eficacia notable Eficiencia y eficacia notable Eficiencia y eficacia notable"},
-    {imageurl:"assets/icons/list.svg",title:"Metodologias efectivas aplicadas Metodologias efectivas aplicadas Metodologias efectivas aplicadas"}
+    {imageurl:"assets/icons/psico.svg",
+    title:"Continuous Learning through digital platforms like Youtube, Udemy, LinekdIn Learning, among others"},
+    {imageurl:"assets/icons/check.svg",
+    title:"Remarkable efficiency and effectiveness on projects of all sizes"},
+    {imageurl:"assets/icons/list.svg",
+    title:"Effective methodologies applied, for example Kanban, Scrum, Pomodoro"}
   ]
 
   constructor() { }
