@@ -4,16 +4,18 @@ figure,img{
   padding: 0;
 }
 
-html{
-  font-family: 'Segoe UI', Roboto, sans-serif;
-}
-
 body{
   margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 
 :root{
+
+  /* *************** */
   /* COLORS */
+  /* *************** */
   --black1:#000;
   --white1:#fff;
 
@@ -31,7 +33,10 @@ body{
 
   --cardHeaderBG:#51d4a4;
 
+
+  /* *************** */
   /* TYPOGRAFY */
+  /* *************** */
 
   --fontTitle1:60px;
   --fontTitle2:50px;

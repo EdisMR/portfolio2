@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 99vh;
+  height: 100vh;
   background-color: var(--coverPage);
   color:var(--coverPageColor);
 }
@@ -28,7 +28,7 @@
   figure{
     img{
       width: 65vw;
-      height: 99vh;
+      height: 100vh;
       object-fit: cover;
     }
   }
@@ -38,7 +38,7 @@
 /* ************** */
 
 #whyme{
-  height: 99vh;
+  height: 100vh;
   background-color: var(--whymeBG);
   color: var(--bodyColor);
 }
