@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+figure,img{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+:root{
+  /* COLORS */
+  --black1:#000;
+  --white1:#fff;
+
+  --bodyBG:#eee;
+  --bodyColor:#333;
+
+  --coverPage:#7d9fbc;
+  --coverPageColor:#eee;
+
+
+  --whymeBG:rgb(105, 197, 151);
+
+  --cardsBG:#304238;
+  --cardsColor:#eee;
+
+  --cardHeaderBG:#51d4a4;
+
+  /* TYPOGRAFY */
+
+  --fontTitle1:60px;
+  --fontTitle2:50px;
+  --fontTitle3:40px;
+  --fontTitle4:30px;
+
+  --font-text-content1:30;
+  --font-text-content2:25;
+  --font-text-content3:20;
+  --font-text-content4:16;
+}
