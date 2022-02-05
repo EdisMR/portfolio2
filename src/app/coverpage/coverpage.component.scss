@@ -71,6 +71,11 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   border-radius: 20px;
+  transition-duration: var(--globalTransitionDuration);
+  transform: scale(1);
+  &:hover, &:active{
+    transform: scale(1.05);
+  }
 }
 
 .card-header{

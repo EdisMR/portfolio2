@@ -1,1 +1,64 @@
-<p>aboutme works!</p>
+<section id="aboutme" class="block">
+
+  <article class="aboutmedescription">
+    <div class="aboutimage">
+      <img src="assets/montania.webp" alt="montania">
+    </div>
+
+    <section class="aboutContainer">
+      <div class="abouttitle">
+        <h3>About me</h3>
+      </div>
+      <div class="abouttext">
+        Este es el texto que me describe a mí. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quae
+        cumque saepe cum ea itaque, sed odio mollitia esse quas quaerat corporis culpa praesentium repellendus doloribus
+        nemo totam. Ea, facilis?
+        Este es el texto que me describe a mí. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quae
+        cumque saepe cum ea itaque, sed odio mollitia esse quas quaerat corporis culpa praesentium repellendus doloribus
+        nemo totam. Ea, facilis?
+        Este es el texto que me describe a mí. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quae
+        cumque saepe cum ea itaque, sed odio mollitia esse quas quaerat corporis culpa praesentium repellendus doloribus
+        nemo totam. Ea, facilis?
+        Este es el texto que me describe a mí. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quae
+        cumque saepe cum ea itaque, sed odio mollitia esse quas quaerat corporis culpa praesentium repellendus doloribus
+        nemo totam. Ea, facilis?
+        Este es el texto que me describe a mí. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quae
+        cumque saepe cum ea itaque, sed odio mollitia esse quas quaerat corporis culpa praesentium repellendus doloribus
+        nemo totam. Ea, facilis?
+      </div>
+    </section>
+  </article>
+
+
+  <article class="tecnologias-antecedentes">
+
+    <div class="tecnologias">
+
+      <div class="tecnotitle">
+        <h3>Tecnologias y herramientas</h3>
+      </div>
+
+      <section class="tecno-items">
+        <ng-container *ngFor="let item of items">
+          <span [class]="item.type" class="tecno-item">{{item.name}}</span>
+        </ng-container>
+      </section>
+    </div>
+
+    <article class="antecedentes">
+      <div class="tecnotitle">
+        <h3>Tecnologias y herramientas</h3>
+      </div>
+      <div class="antecedentes-list-container">
+        <ul>
+          <li *ngFor="let item of antecedentes">
+            {{item}}
+          </li>
+        </ul>
+      </div>
+    </article>
+
+  </article>
+
+
+</section>

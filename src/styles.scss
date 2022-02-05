@@ -11,7 +11,17 @@ body{
   user-select: none;
 }
 
+.block{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 :root{
+  /* *************** */
+  /* Elements */
+  /* *************** */
+  --globalTransitionDuration:.2s;
 
   /* *************** */
   /* COLORS */
@@ -22,16 +32,19 @@ body{
   --bodyBG:#eee;
   --bodyColor:#333;
 
-  --coverPage:#7d9fbc;
+  --coverPage:#5097d4ad;
   --coverPageColor:#eee;
 
 
-  --whymeBG:rgb(105, 197, 151);
+  --whymeBG:rgba(105, 197, 151, 0.788);
 
   --cardsBG:#304238;
   --cardsColor:#eee;
 
   --cardHeaderBG:#51d4a4;
+
+  --aboutmeBG:rgba(220, 20, 60, 0.651);
+  --aboutmeColor:#333;
 
 
   /* *************** */

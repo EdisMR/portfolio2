@@ -1,0 +1,109 @@
+#aboutme{
+  background-color: var(--aboutmeBG);
+  color: var(--aboutmeColor);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.aboutmedescription{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+
+.aboutimage{
+  flex-basis: 20%;
+  img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+}
+
+.aboutContainer{
+  flex-basis: 60%;
+  background-color: rgba(255, 255, 255, 0.644);
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+  letter-spacing: 0.45px;
+}
+
+.abouttitle{
+}
+
+.abouttext{
+}
+
+
+/* Tecnologias */
+
+
+.tecnologias-antecedentes{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.tecnologias{
+  display: inline-block;
+  flex-basis: 50%;
+}
+
+.tecnotitle{
+
+}
+
+.tecno-items{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tecno-item{
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.green-border{
+  border-color: green;
+  background-color: rgba(0, 128, 0, 0.11);
+}
+.red-border{
+  border-color: rgb(190, 59, 59);
+  background-color: rgba(190, 59, 59, 0.151);
+}
+.yellow-border{
+  border-color: rgb(245, 233, 60);
+  background-color: rgba(245, 233, 60, 0.158);
+}
+
+.tecnologias,.antecedentes{
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.63);
+  border-radius: 20px;
+}
+
+.antecedentes{
+  display: inline-block;
+  flex-basis: 30%;
+}
+
+.antecedentes-list-container{
+
+}
