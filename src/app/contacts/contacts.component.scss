@@ -1,0 +1,34 @@
+#contacts{
+  background-color: slateblue;
+  padding: 40px;
+}
+
+.contacts-parent{
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgba(240, 248, 255,.8);
+}
+
+h3{
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-size: var(--fontTitle3);
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+  grid-auto-rows: 200px;
+  gap: 20px 20px;
+}
+
+.contacts-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 146, 179);
+  border-radius: 25px;
+  font-size: var(--fontTitle4);
+  text-decoration: none;
+}
