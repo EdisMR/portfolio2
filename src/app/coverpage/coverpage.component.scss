@@ -1,10 +1,12 @@
 #coverpage{
   display: flex;
-  justify-content: space-around;
   align-items: center;
   height: 100vh;
-  background-color: var(--coverPage);
   color:var(--coverPageColor);
+  background-image: url("https://fondosmil.com/fondo/6415.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .name{
@@ -23,17 +25,6 @@
   font-size: 50px;
   font-family: input, monospace;
 }
-
-.image-container{
-  figure{
-    img{
-      width: 65vw;
-      height: 100vh;
-      object-fit: cover;
-    }
-  }
-}
-
 
 /* ************** */
 
