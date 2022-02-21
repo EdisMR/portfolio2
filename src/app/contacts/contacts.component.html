@@ -7,12 +7,9 @@
     </div>
 
     <div class="grid-container">
-      <a
+      <a target="_blank" rel="noopener noreferrer" class="contacts-item"
       *ngFor="let item of contacts"
-      target="_blank"
-      rel="noopener noreferrer" 
-      [href]="item.url"
-      class="contacts-item">
+      [href]="item.url">
         <span>{{item.title}}</span>
       </a>
     </div>
