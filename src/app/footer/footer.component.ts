@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  share():void{
+    window.navigator.share({
+      title:"Edis MR - Portfolio",
+      url:window.location.href
+    })
+  }
+
   constructor() { }
 
   ngOnInit(): void {
