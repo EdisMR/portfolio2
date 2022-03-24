@@ -1,5 +1,6 @@
 #contacts{
-  background-color: slateblue;
+  background-color: var(--aboutmeBG);
+  color: var(--aboutmeColor);
   padding: 40px;
 }
 
@@ -18,7 +19,7 @@ h3{
 
 .grid-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr) );
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
   grid-auto-rows: 130px;
   gap: 20px 20px;
 }
@@ -31,4 +32,9 @@ h3{
   border-radius: 25px;
   font-size: var(--fontTitle4);
   text-decoration: none;
+  color: #eee !important;
+
+  $directory:"/assets";
+  background-image: url("#{$directory}/fondo-contact.jpg");
+  background-size: cover;
 }

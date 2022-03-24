@@ -68,6 +68,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: #000;
 }
 
 .tecno-item{
@@ -124,12 +125,13 @@
   }
   a{
     transition-duration: var(--globalTransitionDuration);
-    color: #1655e2;
+    font-weight: 500;
+    color: var(--aboutmeAnchorColor);
     &:hover{
-      color: #0099ff;
+      color: var(--aboutmeAnchorColorHover);
     }
     &:active{
-      color: #1243ad;
+      color: var(--aboutmeAnchorColorActive);
     }
   }
 }
