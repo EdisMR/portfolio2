@@ -1,0 +1,19 @@
+#lightgallery{
+  max-height: 70vh;
+  overflow: hidden;
+  width: 60vw;
+  margin: auto auto;
+}
+
+img{
+  display: inline-block;
+  width: 100%;
+}
+
+@media (max-width:700px){
+  #lightgallery{
+    max-height: 50vh;
+    width: 90vw;
+    margin: auto auto;
+  }
+}

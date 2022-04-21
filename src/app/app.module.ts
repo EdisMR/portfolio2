@@ -8,6 +8,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { LightgalleryModule } from 'lightgallery/angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    LightgalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
