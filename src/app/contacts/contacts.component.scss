@@ -14,7 +14,7 @@ h3{
   margin: 0;
   margin-top: 25px;
   margin-bottom: 25px;
-  font-size: var(--fontTitle3);
+  font-size: var(--fontTitle4);
 }
 
 .grid-container{
@@ -48,6 +48,9 @@ h3{
   }
 }
 
+.contacts-title{
+  font-size: var(--fontTitle4);
+}
 @media (max-width:700px){
   #contacts{
     padding: 8px;

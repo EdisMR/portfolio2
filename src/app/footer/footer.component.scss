@@ -12,3 +12,19 @@ footer{
     color: #fff !important;
   }
 }
+
+#shareIconContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  &:hover{
+    transform: scale(1.05);
+  }
+
+}

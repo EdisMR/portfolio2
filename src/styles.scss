@@ -1,4 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at https://aka.ms/fabric-assets-license
+*/
+@font-face {
+  font-family: 'FabricMDL2Icons';
+  src: url('assets/icons/fabric-icons-463d819f.woff') format('woff');
+}
+
+.ms-Icon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: 'FabricMDL2Icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+
+.ms-Icon--Contact:before { content: "\E77B"; }
+.ms-Icon--ContactCard:before { content: "\EEBD"; }
+.ms-Icon--DeveloperTools:before { content: "\EC7A"; }
+.ms-Icon--Share:before { content: "\E72D"; }
+.ms-Icon--ViewInAR:before { content: "\E41F"; }
+
+
+
 figure,img{
   margin: 0;
   padding: 0;
@@ -68,7 +94,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   --fontTitle1:60px;
   --fontTitle2:50px;
   --fontTitle3:40px;
-  --fontTitle4:30px;
+  --fontTitle4:25px;
 
   --font-text-content1:30;
   --font-text-content2:25;
