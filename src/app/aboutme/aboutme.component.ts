@@ -24,7 +24,7 @@ export class AboutmeComponent implements OnInit {
     {name:"Visual Studio Code",type:"green-border"},
     {name:"JSON",type:"green-border"},
     {name:"Ajax",type:"green-border"},
-    {name:"Angular",type:"yellow-border"},
+    {name:"Angular",type:"green-border"},
     {name:"React",type:"yellow-border"},
     {name:"JS REGEXP",type:"yellow-border"},
     {name:"PHP",type:"red-border"},

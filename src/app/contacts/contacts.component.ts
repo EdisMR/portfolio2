@@ -28,11 +28,6 @@ export class ContactsComponent implements OnInit {
       image:""
     },
     {
-      title:"LinkedIn",
-      url:"https://www.linkedin.com/in/edismr/",
-      image:""
-    },
-    {
       title:"Telegram",
       url:"https://t.me/edismr",
       image:""

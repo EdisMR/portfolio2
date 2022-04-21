@@ -1,5 +1,5 @@
 #contacts{
-  background-color: var(--aboutmeBG);
+  /* background-color: var(--aboutmeBG); */
   color: var(--aboutmeColor);
   padding: 40px;
 }
@@ -7,13 +7,13 @@
 .contacts-parent{
   padding: 20px;
   border-radius: 25px;
-  background-color: rgba(240, 248, 255,.8);
+  background-color: var(--transparencyBG);
 }
 
 h3{
   margin: 0;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-size: var(--fontTitle3);
 }
 
@@ -36,4 +36,24 @@ h3{
 
   background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20210130/pngtree-wavy-irregular-gradient-abstract-background-image_549218.jpg");
   background-size: cover;
+
+  transform: scale(1);
+  transition-duration: var(--globalTransitionDuration);
+
+  &:hover{
+    transform: scale(1.05);
+  }
+  &:active{
+    transform: scale(0.99);
+  }
+}
+
+@media (max-width:700px){
+  #contacts{
+    padding: 8px;
+  }
+
+  .grid-container{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) );
+  }
 }
