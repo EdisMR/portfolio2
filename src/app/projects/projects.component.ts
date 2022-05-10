@@ -1,38 +1,29 @@
-import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
-import { BeforeSlideDetail } from 'lightgallery/lg-events';
+import { Component, OnInit } from '@angular/core';
+import SwiperCore from 'swiper';
+
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss',],
 })
-export class ProjectsComponent implements OnInit, AfterViewInit {
-  @ViewChildren ('lightgalleryElement',{read:ElementRef})
-  lightgalleryElement!: QueryList<ElementRef>
+export class ProjectsComponent implements OnInit {
 
-  showGallery():void{
-    this.lightgalleryElement.first.nativeElement.click()
+  onSwiper(data:any) {
+    console.log(data);
+  }
+  onSlideChange() {
+    console.log('slide change');
   }
 
-  settings:any = {
-    counter: true,
-    zoom:true,
-    download:false,
-    showZoomInOutIcons:true,
-    width: '100%',
-    showBarsAfter:true,
-    showMaximizeIcon:true,
-    showCloseIcon:false,
-    showThumbnails:true,
-    controls:true,
-    container: '#lightgallery',
-  };
-
-  showLoader:boolean = false;
-
-  ngAfterViewInit(): void {
-    this.showGallery();
+  isMobile(){
+    if(window.screen.width>=600){
+      return 2
+    }
+    return 1
   }
+
+
 
   constructor() {}
 

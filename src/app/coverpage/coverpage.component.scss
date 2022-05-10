@@ -1,9 +1,11 @@
+$assets:"assets/";
+
 #coverpage{
   display: flex;
   align-items: center;
   height: 100vh;
   color:var(--coverPageColor);
-  background-image: url("https://fondosmil.com/fondo/6415.jpg");
+  background-image: url("^assets/main-background.webp");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,6 +16,7 @@
   flex-direction: column;
   position: relative;
   left: 50px;
+  text-shadow: 0px 1px 15px #000000;
 }
 
 .name-title{

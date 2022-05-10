@@ -9,6 +9,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { LightgalleryModule } from 'lightgallery/angular';
+import { SwiperModule } from 'swiper/angular';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { LightgalleryModule } from 'lightgallery/angular';
   ],
   imports: [
     BrowserModule,
-    LightgalleryModule
+    LightgalleryModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
