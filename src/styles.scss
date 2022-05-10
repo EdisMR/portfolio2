@@ -40,12 +40,7 @@ body{
   scroll-behavior: smooth;
   user-select: none;
 
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+42,000000+42,003f5a+59,017994+85,22b9d4+100 */
-background: #000000; /* Old browsers */
-background: -moz-linear-gradient(top,  hsl(0,0%,0%) 42%, hsl(0,0%,0%) 42%, hsl(198,100%,18%) 59%, hsl(191,99%,29%) 85%, hsl(189,73%,48%) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  hsl(0,0%,0%) 42%,hsl(0,0%,0%) 42%,hsl(198,100%,18%) 59%,hsl(191,99%,29%) 85%,hsl(189,73%,48%) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  hsl(0,0%,0%) 42%,hsl(0,0%,0%) 42%,hsl(198,100%,18%) 59%,hsl(191,99%,29%) 85%,hsl(189,73%,48%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#22b9d4',GradientType=0 ); /* IE6-9 */
+  background-color: #cfe7ed;
 
 }
 
