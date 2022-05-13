@@ -10,10 +10,8 @@ import SwiperCore from 'swiper';
 export class ProjectsComponent implements OnInit {
 
   onSwiper(data:any) {
-    console.log(data);
   }
   onSlideChange() {
-    console.log('slide change');
   }
 
   isMobile(){

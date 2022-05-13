@@ -121,18 +121,18 @@
     text-decoration: none;
   }
   li{
-    padding-bottom: 7px;
-  }
-  a{
     transition-duration: var(--globalTransitionDuration);
-    font-weight: 500;
-    color: var(--aboutmeAnchorColor);
+    padding-bottom: 7px;
     &:hover{
-      color: var(--aboutmeAnchorColorHover);
+      background-color: var(--aboutmeAnchorColorHover);
     }
     &:active{
-      color: var(--aboutmeAnchorColorActive);
+      background-color: var(--aboutmeAnchorColorActive);
     }
+  }
+  a{
+    font-weight: 500;
+    color: var(--aboutmeAnchorColor);
   }
 }
 
