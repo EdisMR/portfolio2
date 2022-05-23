@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore from 'swiper';
 
 
 @Component({
@@ -8,11 +7,6 @@ import SwiperCore from 'swiper';
   styleUrls: ['./projects.component.scss',],
 })
 export class ProjectsComponent implements OnInit {
-
-  onSwiper(data:any) {
-  }
-  onSlideChange() {
-  }
 
   isMobile(){
     if(window.screen.width>=600){

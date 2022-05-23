@@ -8,9 +8,6 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
 
-import { LightgalleryModule } from 'lightgallery/angular';
-import { SwiperModule } from 'swiper/angular';
-
 
 @NgModule({
   declarations: [
@@ -23,8 +20,6 @@ import { SwiperModule } from 'swiper/angular';
   ],
   imports: [
     BrowserModule,
-    LightgalleryModule,
-    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
