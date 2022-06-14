@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contacts',
@@ -7,39 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  contacts:{
-    title:string
-    url:string
-    image:string/* imagen de fondo */
-  }[]=[
-    {
-      title:"LinkedIn",
-      url:"https://www.linkedin.com/in/edismr/",
-      image:""
-    },
-    {
-      title:"Github",
-      url:"https://github.com/EdisMR",
-      image:""
-    },
-    {
-      title:"Email",
-      url:"mailto:edisanthony@gmail.com",
-      image:""
-    },
-    {
-      title:"Telegram",
-      url:"https://t.me/edismr",
-      image:""
-    },
-    {
-      title:"Whatsapp",
-      url:"https://wa.me/50663062581",
-      image:""
-    },
-  ]
+  email='ZWRpc2FudGhvbnlAZ21haWwuY29t'
 
-  constructor() { }
+  constructor(
+    private _formBuilder:FormBuilder
+  ) {
+    this.buildForm()
+  }
+
+  form!:FormGroup
+
+  buildForm():void{
+    this.form = this._formBuilder.group({
+      subject: ['',[]],
+      message: ['',Validators.required],
+    })
+  }
+
+  sendEmail():void{
+    let url=`mailto:${atob(this.email)}?subject=${this.form.value.subject}&body=${this.form.value.message}`
+    window.open(url,'_blank')
+  }
 
   ngOnInit(): void {
   }

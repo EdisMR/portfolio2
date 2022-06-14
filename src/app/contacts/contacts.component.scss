@@ -1,63 +1,57 @@
 #contacts{
-  /* background-color: var(--aboutmeBG); */
-  color: var(--aboutmeColor);
   padding: 40px;
   margin-top: 50px;
-}
-
-.contacts-parent{
-  padding: 20px;
-  border-radius: 25px;
-  background-color: var(--transparencyBG);
-}
-
-h3{
-  margin: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-size: var(--fontTitle4);
-}
-
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
-  grid-auto-rows: 130px;
-  gap: 20px 20px;
-}
-
-.contacts-item{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: rgb(15, 146, 179);
-  border-radius: 25px;
-  font-size: var(--fontTitle4);
-  text-decoration: none;
-  color: #eee !important;
-  font-weight: 700;
-  background-image: url("^assets/fondo-contact.webp");
-  background-size: cover;
+  justify-content: center;
+  color: #eee;
+}
 
-  transform: scale(1);
-  transition-duration: var(--globalTransitionDuration);
+form{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
-  &:hover{
-    transform: scale(1.05);
-  }
-  &:active{
-    transform: scale(0.99);
+  textarea{
+    resize: vertical;
   }
 }
 
-.contacts-title{
-  font-size: var(--fontTitle4);
+.form-group{
+  margin: 5px;
+  width: 100%;
 }
+
+.form-control{
+  width: 100%;
+}
+
+
+.buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  padding: 5px 10px;
+  border-width:1px;
+  color:#666666;
+  border-color:#dcdcdc;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  text-shadow:inset 0px 1px 0px #ffffff;
+  background:linear-gradient(#f9f9f9, #e9e9e9);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#e9e9e9, #f9f9f9);
+}
+
+
 @media (max-width:700px){
   #contacts{
     padding: 8px;
-  }
-
-  .grid-container{
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) );
   }
 }
