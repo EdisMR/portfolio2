@@ -11,7 +11,7 @@
             <label for="message">Message</label>
             <textarea class="form-control" formControlName="message" placeholder="Your message"></textarea>
           </div>
-          <button type="submit" class="buttonClass" (click)="sendEmail()">Submit</button>
+          <button type="submit" class="buttonClass" (click)="sendEmail()" [disabled]="form.invalid">Submit</button>
         </form>
 
 </section>
