@@ -12,19 +12,23 @@ form{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
+  margin-bottom: 20px;
   textarea{
     resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
   }
 }
 
 .form-group{
-  margin: 5px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .form-control{
-  width: 100%;
+  font-weight: bold;
 }
 
 
