@@ -21,7 +21,7 @@ export class ContactsComponent implements OnInit {
   buildForm():void{
     this.form = this._formBuilder.group({
       subject: ['',[]],
-      message: ['',Validators.required],
+      message: ['',[Validators.required,Validators.minLength(10)]],
     })
   }
 
