@@ -17,16 +17,16 @@ export class AboutmeComponent implements OnInit {
     {name:"Typescript",type:"green-border"},
     {name:"SASS",type:"green-border"},
     {name:"Responsive Web Design",type:"green-border"},
-    {name:"Bootstrap",type:"green-border"},
+    {name:"Angular",type:"green-border"},
     {name:"Git",type:"green-border"},
     {name:"Github",type:"green-border"},
+    {name:"Bootstrap",type:"green-border"},
     {name:"GSAP",type:"green-border"},
     {name:"Visual Studio Code",type:"green-border"},
     {name:"JSON",type:"green-border"},
     {name:"Ajax",type:"green-border"},
-    {name:"Angular",type:"green-border"},
+    {name:"JS REGEXP",type:"green-border"},
     {name:"React",type:"yellow-border"},
-    {name:"JS REGEXP",type:"yellow-border"},
     {name:"PHP",type:"red-border"},
   ]
 
@@ -35,8 +35,8 @@ export class AboutmeComponent implements OnInit {
     url:string
   }[]=[
     {
-      description:"ASIPROFE - Informative PHP website for ASIPROFE",
-      url:"https://socpruebas.000webhostapp.com/"
+      description:'Work at Mobile Marketing as Angular Frontend Developer',
+      url:''
     },
     {
       description:"Microsoft Windows Commands - Useful Keyboard commands",
@@ -69,6 +69,10 @@ export class AboutmeComponent implements OnInit {
     {
       description:"Angular Simple Cryptography (Base64)",
       url:"https://edismr.github.io/crypto/"
+    },
+    {
+      description:"ASIPROFE - Informative PHP website for ASIPROFE",
+      url:"https://socpruebas.000webhostapp.com/"
     },
     {
       description:"Target Parent Observe - Discover the parent node",
