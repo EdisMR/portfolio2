@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build --configuration=production --base-href=./ --output-path=docs ",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "git-upload-build": "npm run build && git add . && git commit -m \"build\" && git push",
+    "qqqq": "npm run git-upload-build"
   },
   "private": true,
   "dependencies": {
