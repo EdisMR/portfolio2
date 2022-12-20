@@ -1,6 +1,6 @@
 <div id="gallery-container">
 
-    <section class="gallery">
+    <section class="gallery" #videoPlayer>
 
       <ng-container *ngFor="let item of videosNames">
       <div class="gallery-item">
@@ -9,4 +9,16 @@
       </ng-container>
 
     </section>
+    <div class="gallery-control gallery-control-left" (click)="scrollPrev()">
+      <span>
+        <!-- ⏴︎ -->
+        &#x25C0;
+      </span>
+    </div>
+    <div class="gallery-control gallery-control-right" (click)="scrollNext()">
+      <span>
+        <!-- ⏵︎ -->
+        &#x25B6;
+      </span>
+    </div>
 </div>

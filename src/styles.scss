@@ -17,83 +17,101 @@
   speak: none;
 }
 
-.ms-Icon--Contact:before { content: "\E77B"; }
-.ms-Icon--ContactCard:before { content: "\EEBD"; }
-.ms-Icon--DeveloperTools:before { content: "\EC7A"; }
-.ms-Icon--Share:before { content: "\E72D"; }
-.ms-Icon--ViewInAR:before { content: "\E41F"; }
+.ms-Icon--Contact:before {
+  content: "\E77B";
+}
+
+.ms-Icon--ContactCard:before {
+  content: "\EEBD";
+}
+
+.ms-Icon--DeveloperTools:before {
+  content: "\EC7A";
+}
+
+.ms-Icon--Share:before {
+  content: "\E72D";
+}
+
+.ms-Icon--ViewInAR:before {
+  content: "\E41F";
+}
 
 
-figure,img{
+figure,
+img {
   margin: 0;
   padding: 0;
 }
 
-html{
-  background: rgb(60,255,254);
-background: linear-gradient(153deg, rgba(60,255,254,1) 6%, rgba(42,114,214,1) 19%, rgba(65,208,255,1) 35%, rgba(42,138,212,1) 50%, rgba(72,190,219,1) 71%, rgba(109,3,193,1) 100%);
+*{
+  scroll-behavior: smooth;
 }
 
-body{
+html {
+  background: rgb(60, 255, 254);
+  background: linear-gradient(153deg, rgba(60, 255, 254, 1) 6%, rgba(42, 114, 214, 1) 19%, rgba(65, 208, 255, 1) 35%, rgba(42, 138, 212, 1) 50%, rgba(72, 190, 219, 1) 71%, rgba(109, 3, 193, 1) 100%);
+}
+
+body {
   margin: 0;
   font-family: 'Segoe UI', Roboto, sans-serif;
-  scroll-behavior: smooth;
   user-select: none;
 }
 
-.block{
+.block {
   display: block;
   margin: 0;
   padding: 0;
 }
 
-:root{
+:root {
   /* *************** */
   /* Elements */
   /* *************** */
-  --globalTransitionDuration:.2s;
+  --globalTransitionDuration: .2s;
 
   /* *************** */
   /* COLORS */
   /* *************** */
 
-  --transparencyBG:rgba(255, 255, 255, 0.685);
+  --transparencyBG: rgba(255, 255, 255, 0.685);
 
-  --black1:#000;
-  --white1:#fff;
+  --black1: #000;
+  --white1: #fff;
 
-  --bodyBG:#eee;
-  --bodyColor:#333;
+  --bodyBG: #eee;
+  --bodyColor: #333;
 
-  --coverPage:#5097d4ad;
-  --coverPageColor:rgba(238, 238, 238,.9);
+  --coverPage: #5097d4ad;
+  --coverPageColor: rgba(238, 238, 238, .9);
 
 
-  --whymeBG:rgba(105, 197, 151, 0.788);
+  --whymeBG: rgba(105, 197, 151, 0.788);
 
-  --cardsBG:#304238;
-  --cardsColor:#eee;
+  --cardsBG: #304238;
+  --cardsColor: #eee;
 
-  --cardHeaderBG:#51d4a4;
+  --cardHeaderBG: #51d4a4;
 
-  --aboutmeBG:rgb(0 79 106);
-  --aboutmeColor:rgb(0 65 93);
+  --aboutmeBG: rgb(0 79 106);
+  --aboutmeColor: rgb(0 65 93);
 
-  --aboutmeAnchorColor:rgb(23 111 193);
-  --aboutmeAnchorColorHover:rgba(255, 255, 255, 0.253);
-  --aboutmeAnchorColorActive:rgba(68, 63, 63, 0.089);
+  --aboutmeAnchorColor: rgb(23 111 193);
+  --aboutmeAnchorColorHover: rgba(255, 255, 255, 0.253);
+  --aboutmeAnchorColorActive: rgba(68, 63, 63, 0.089);
 
   /* *************** */
   /* TYPOGRAFY */
   /* *************** */
 
-  --fontTitle1:60px;
-  --fontTitle2:50px;
-  --fontTitle3:40px;
-  --fontTitle4:25px;
+  --fontTitle1: 60px;
+  --fontTitle2: 50px;
+  --fontTitle3: 40px;
+  --fontTitle4: 25px;
 
-  --font-text-content1:30;
-  --font-text-content2:25;
-  --font-text-content3:20;
-  --font-text-content4:16;
+  --font-text-content1: 30;
+  --font-text-content2: 25;
+  --font-text-content3: 20;
+  --font-text-content4: 16;
 }

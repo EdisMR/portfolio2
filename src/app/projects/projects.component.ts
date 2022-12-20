@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 
 
 @Component({
@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  videosNames:string[] = [
+  @ViewChildren('videoPlayer', { read: ElementRef }) videoPlayerSource!: QueryList<ElementRef>;
+  private get videoPlayer() {
+    return this.videoPlayerSource.first.nativeElement;
+  }
+
+  videosNames: string[] = [
     'assets/img/video(1).mp4',
     'assets/img/video(2).mp4',
     'assets/img/video(3).mp4',
@@ -25,8 +30,32 @@ export class ProjectsComponent implements OnInit {
     'assets/img/video(14).mp4',
   ]
 
-  isMobile(){
-    if(window.screen.width>=600){
+  scrollNext(): void {
+    let scrollFromParent = this.videoPlayer.scrollLeft;
+    let parentWidth = this.videoPlayer.clientWidth;
+    let scrollWidth = this.videoPlayer.scrollWidth;
+    let newScroll = scrollFromParent + parentWidth + 20;
+    if (newScroll > scrollWidth) {
+      this.videoPlayer.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      this.videoPlayer.scrollTo({ left: newScroll, behavior: 'smooth' });
+    }
+  }
+
+  scrollPrev(): void {
+    let scrollFromParent = this.videoPlayer.scrollLeft;
+    let parentWidth = this.videoPlayer.clientWidth;
+    let newScroll = scrollFromParent - parentWidth;
+    let fullScroll = this.videoPlayer.scrollWidth;
+    if (newScroll < 0) {
+      this.videoPlayer.scrollTo({ left: fullScroll, behavior: 'smooth' });
+    } else {
+      this.videoPlayer.scrollTo({ left: newScroll, behavior: 'smooth' });
+    }
+  }
+
+  isMobile() {
+    if (window.screen.width >= 600) {
       return 2
     }
     return 1
@@ -34,7 +63,7 @@ export class ProjectsComponent implements OnInit {
 
 
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
   }
