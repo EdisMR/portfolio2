@@ -5,18 +5,18 @@ $assets:"assets/";
   align-items: center;
   height: 100vh;
   color:var(--coverPageColor);
-  background-image: url("^assets/background.webp");
-  background-position: bottom;
+  background-image: url("^assets/undraw_programming_re_kg9v.svg");
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .name{
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   left: 50px;
-  top: 50px;
+  top: 80vh;
   text-shadow: 0px 1px 15px #000000;
 }
 
