@@ -16,18 +16,23 @@ export class ContactsComponent implements OnInit {
     this.buildForm()
   }
 
-  form!:FormGroup
+  public form!:FormGroup
+  public maxCharacters=1000
 
-  buildForm():void{
+  private buildForm():void{
     this.form = this._formBuilder.group({
-      subject: ['',[]],
-      message: ['',[Validators.required,Validators.minLength(10)]],
+      subject: ['',[Validators.required,Validators.minLength(5),Validators.maxLength(50)]],
+      message: ['',[Validators.required,Validators.minLength(10),Validators.maxLength(this.maxCharacters)]],
     })
   }
 
-  sendEmail():void{
+  public sendEmail():void{
     let url=`mailto:${atob(this.email)}?subject=${this.form.value.subject}&body=${this.form.value.message}`
     window.open(url,'_blank')
+  }
+
+  public get writtenCharacters():number{
+    return this.form.value.message.length
   }
 
   ngOnInit(): void {

@@ -10,6 +10,7 @@
           <div class="form-group">
             <label for="message">Message</label>
             <textarea class="form-control" formControlName="message" placeholder="Your message"></textarea>
+            <span class="small-text">{{writtenCharacters}} / {{maxCharacters}}</span>
           </div>
           <button type="submit" class="buttonClass" (click)="sendEmail()" [disabled]="form.invalid">Submit</button>
         </form>
