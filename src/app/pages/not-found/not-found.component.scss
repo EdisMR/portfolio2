@@ -1,0 +1,36 @@
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #292929;
+  color: #b3e8ed;
+}
+
+.not-found-page h1 {
+  font-size: 100px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+}
+.not-found-page h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.not-found-page p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.not-found-page a {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #aba1e7;
+}
