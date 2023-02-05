@@ -15,8 +15,6 @@ export class LoginGuard implements CanActivate {
     private readonly router: Router
   ) {}
 
-  loginDataSubscription!:Subscription;
-
   canActivate(): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return this.loginService.loginData$.pipe(
       map((loginData:loginInterface) => {
