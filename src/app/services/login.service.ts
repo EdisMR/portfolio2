@@ -23,8 +23,6 @@ export class LoginService {
       this.loginData.next({loggedIn: false});
     }
 
-    console.log('loginData', this.loginData.getValue());
-
     this.saveSession();
   }
 
@@ -36,15 +34,23 @@ export class LoginService {
   saveSession(): void {
     /* save session status to localstorage */
     /* session in localstorage is named session */
-    let session = JSON.stringify(this.loginData.getValue());
-    if(session) localStorage.setItem('session', session);
+    let session:string = JSON.stringify(this.loginData.getValue());
+    if(session){
+      /* convert to base64 and save to localstorage */
+      session = btoa(session);
+      localStorage.setItem('session', session);
+    }
   }
 
   restoreSession(): void {
     /* restore session status from localstorage */
     /* session in localstorage is named session */
     let session = localStorage.getItem('session');
-    if(session) this.loginData.next(JSON.parse(session));
+    if(session){
+      /* convert from base64 to json and restore session */
+      session = atob(session);
+      this.loginData.next(JSON.parse(session));
+    }
   }
 
 }
