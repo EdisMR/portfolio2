@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginGuard } from './guards/login.guard';
 import { LoginComponent } from './pages/login/login.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: MainPageComponent, canActivate: [LoginGuard] },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

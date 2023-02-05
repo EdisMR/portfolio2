@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, Router, UrlTree } from '@angular/router';
+import { ActivatedRoute, CanActivate, Router, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
 import { loginInterface } from '../interfaces/common';
 import { LoginService } from '../services/login.service';
-import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Injectable({
@@ -12,7 +11,8 @@ import { map } from 'rxjs/operators';
 export class LoginGuard implements CanActivate {
   constructor(
     private readonly loginService: LoginService,
-    private readonly router: Router
+    private _router: Router,
+    private _route: ActivatedRoute,
   ) {}
 
   canActivate(): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
@@ -20,8 +20,9 @@ export class LoginGuard implements CanActivate {
       map((loginData:loginInterface) => {
         if(loginData.loggedIn) {
           return true;
+        }else{
+          return false
         }
-        return this.router.createUrlTree(['/login']);
       })
     );
   }

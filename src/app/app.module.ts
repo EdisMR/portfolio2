@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './pages/login/login.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
     FooterComponent,
     LoginComponent,
     MainPageComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

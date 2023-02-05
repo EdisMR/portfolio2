@@ -15,11 +15,16 @@ export class LoginService {
   public loginData$ = this.loginData.asObservable();
 
   public loginRequest(pass:string): void {
-    if (pass === environment2.pass4login) {
+    let pass4login = environment2.pass4login;
+
+    if (pass === pass4login) {
       this.loginData.next({loggedIn: true});
     } else {
       this.loginData.next({loggedIn: false});
     }
+
+    console.log('loginData', this.loginData.getValue());
+
     this.saveSession();
   }
 

@@ -2,12 +2,24 @@
 
   <section class="form-parent">
     <article class="login-avatar">
-      <div class="login-avatart-image">
+      <div class="login-avatar-image">
         <i class="ms-Icon ms-Icon--Contact"></i>
       </div>
     </article>
     <article class="form-container">
-      <form></form>
+      <form [formGroup]="loginForm" (ngSubmit)="sendForm()">
+        <div class="form-group">
+          <div>
+            <label for="password">Password</label>
+          </div>
+          <div class="input-container">
+            <input type="password" autocomplete="off" class="form-control" placeholder="Password" formControlName="password">
+          </div>
+        </div>
+        <div class="form-send-btn-container">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </article>
   </section>
 
