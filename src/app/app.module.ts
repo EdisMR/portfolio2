@@ -8,6 +8,9 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './pages/login/login.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 
 
 @NgModule({
@@ -18,10 +21,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutmeComponent,
     ContactsComponent,
     FooterComponent,
+    LoginComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
