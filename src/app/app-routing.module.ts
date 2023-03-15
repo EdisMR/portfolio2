@@ -6,9 +6,8 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', component: MainPageComponent, canActivate: [LoginGuard] },
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: MainPageComponent, canActivate: [LoginGuard] },
   { path: '**', component: NotFoundComponent }
 ];
 

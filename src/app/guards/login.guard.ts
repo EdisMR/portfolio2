@@ -21,6 +21,7 @@ export class LoginGuard implements CanActivate {
         if(loginData.loggedIn) {
           return true;
         }else{
+          this._router.navigate(['/login'], { relativeTo: this._route });
           return false
         }
       })

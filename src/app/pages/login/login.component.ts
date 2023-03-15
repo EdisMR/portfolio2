@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { loginInterface } from 'src/app/interfaces/common';
 import { LoginService } from 'src/app/services/login.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit, OnDestroy {
 
   constructor(
     private _fb: FormBuilder,
@@ -15,8 +17,14 @@ export class LoginComponent implements OnInit {
     private _router: Router,
   ) {
     this.buildForm();
-    this._router.navigate(['/home']);
   }
+
+  private loginData:Subscription=this._loginSvc.loginData$
+  .subscribe((loginData:loginInterface) => {
+    if(loginData.loggedIn) {
+      this._router.navigate(['/'],{relativeTo: this._router.routerState.root})
+    }
+  });
 
   public loginForm!: FormGroup;
 
@@ -29,7 +37,7 @@ export class LoginComponent implements OnInit {
   public sendForm(): void {
     let pass = this.loginForm.get('password')?.value;
     this._loginSvc.loginRequest(pass);
-    this._router.navigate(['/home']);
+    this._router.navigate(['/']);
   }
 
   public get passwordField() {
@@ -37,6 +45,10 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  ngOnDestroy(): void {
+    this.loginData.unsubscribe();
   }
 
 }
