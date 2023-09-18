@@ -35,7 +35,7 @@ export class AboutmeComponent implements OnInit {
     url:string
   }[]=[
     {
-      description:'Work at Mobile Marketing as Angular Frontend Developer',
+      description:'Angular Frontend Developer at Mobile Marketing',
       url:''
     },
     {
@@ -67,19 +67,19 @@ export class AboutmeComponent implements OnInit {
       url:"https://edismr.github.io/angular-weather-api/"
     },
     {
-      description:"Angular Simple Cryptography (Base64)",
+      description:"Angular Simple Base64 Cryptography",
       url:"https://edismr.github.io/crypto/"
     },
     {
-      description:"ASIPROFE - Informative PHP website for ASIPROFE",
-      url:"https://socpruebas.000webhostapp.com/"
+      description:"ASIPROFE - Informative website for ASIPROFE (PHP)",
+      url:""
     },
     {
-      description:"Target Parent Observe - Discover the parent node",
+      description:"Target Parent Observe - Discover html parent node",
       url:"https://edismr.github.io/targetParentObserve/"
     },
     {
-      description:"Whatsapp Text Message Generator - Generate a message programatically",
+      description:"Whatsapp Text Message Generator - Generate Whatsapp message programatically",
       url:"https://edismr.github.io/wsppSendTextMessage/"
     },
     {
@@ -91,8 +91,20 @@ export class AboutmeComponent implements OnInit {
       url:""
     },
     {
-      description:"Angular and PHP Local Business Directory",
+      description:"Angular and NestJs Local Business Directory",
       url:""
+    },
+    {
+      description:"Screen recorder for Chrome, Windows",
+      url:"https://edismr.github.io/screen-recorder/"
+    },
+    {
+      description:"Angular Roulette payment practice",
+      url:"https://edismr.github.io/canasta-builds/"
+    },
+    {
+      description:"Material Design Internet Speed Calculator",
+      url:"https://edismr.github.io/speed-internet-calculator/"
     }
   ]
 
