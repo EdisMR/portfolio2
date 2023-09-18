@@ -26,6 +26,8 @@ export class AboutmeComponent implements OnInit {
     {name:"JSON",type:"green-border"},
     {name:"Ajax",type:"green-border"},
     {name:"JS REGEXP",type:"green-border"},
+    {name:"NodeJs",type:"green-border"},
+    {name:"NestJs",type:"yellow-border"},
     {name:"React",type:"yellow-border"},
     {name:"PHP",type:"red-border"},
   ]
