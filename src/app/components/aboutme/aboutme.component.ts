@@ -39,6 +39,18 @@ export class AboutmeComponent implements OnInit {
       url:''
     },
     {
+      description:'My location coordinates - Get your location coordinates',
+      url:'https://edismr.github.io/my-location/'
+    },
+    {
+      description:"Angular Roulette payment practice",
+      url:"https://edismr.github.io/canasta-builds/"
+    },
+    {
+      description:"Material Design Internet Speed Calculator",
+      url:"https://edismr.github.io/speed-internet-calculator/"
+    },
+    {
       description:"Microsoft Windows Commands - Useful Keyboard commands",
       url:"https://edismr.github.io/windowscommands/"
     },
@@ -55,15 +67,15 @@ export class AboutmeComponent implements OnInit {
       url:"https://edismr.github.io/4-in-a-row/"
     },
     {
-      description:"Angular Calculator from Scratch",
+      description:"Angular Calculator, construction from Scratch",
       url:"https://edismr.github.io/calculator-angular/"
     },
     {
-      description:"Angular Video Player",
+      description:"Angular Simple Video Player Controls",
       url:"https://edismr.github.io/videoplayer/"
     },
     {
-      description:"Angular Weather API Consumption",
+      description:"Weather API Consumption",
       url:"https://edismr.github.io/angular-weather-api/"
     },
     {
@@ -83,11 +95,11 @@ export class AboutmeComponent implements OnInit {
       url:"https://edismr.github.io/wsppSendTextMessage/"
     },
     {
-      description:"Wild Waves Surf - React based Ecommerce",
+      description:"React Ecommerce - Wild Waves Surf",
       url:"https://github.com/No-Country/C2-01-M"
     },
     {
-      description:"PHP Ecommerce - Sell in Whatsapp",
+      description:"PHP Ecommerce - Sell through Whatsapp",
       url:""
     },
     {
@@ -97,14 +109,6 @@ export class AboutmeComponent implements OnInit {
     {
       description:"Screen recorder for Chrome, Windows",
       url:"https://edismr.github.io/screen-recorder/"
-    },
-    {
-      description:"Angular Roulette payment practice",
-      url:"https://edismr.github.io/canasta-builds/"
-    },
-    {
-      description:"Material Design Internet Speed Calculator",
-      url:"https://edismr.github.io/speed-internet-calculator/"
     }
   ]
 
