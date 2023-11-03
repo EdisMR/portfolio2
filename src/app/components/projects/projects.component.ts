@@ -1,10 +1,11 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss',],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class ProjectsComponent implements OnInit {
 
@@ -14,20 +15,20 @@ export class ProjectsComponent implements OnInit {
   }
 
   videosNames: string[] = [
-    'assets/img/video(1).mp4',
-    'assets/img/video(2).mp4',
-    'assets/img/video(3).mp4',
-    'assets/img/video(4).mp4',
-    'assets/img/video(5).mp4',
-    'assets/img/video(6).mp4',
-    'assets/img/video(7).mp4',
-    'assets/img/video(8).mp4',
-    'assets/img/video(9).mp4',
-    'assets/img/video(10).mp4',
-    'assets/img/video(11).mp4',
-    'assets/img/video(12).mp4',
-    'assets/img/video(13).mp4',
-    'assets/img/video(14).mp4',
+    'assets/img/video(1).webm',
+    'assets/img/video(2).webm',
+    'assets/img/video(3).webm',
+    'assets/img/video(4).webm',
+    'assets/img/video(5).webm',
+    'assets/img/video(6).webm',
+    'assets/img/video(7).webm',
+    'assets/img/video(8).webm',
+    'assets/img/video(9).webm',
+    'assets/img/video(10).webm',
+    'assets/img/video(11).webm',
+    'assets/img/video(12).webm',
+    'assets/img/video(13).webm',
+    'assets/img/video(14).webm',
   ]
 
   scrollNext(): void {
@@ -44,10 +45,10 @@ export class ProjectsComponent implements OnInit {
 
   scrollPrev(): void {
     let scrollFromParent = this.videoPlayer.scrollLeft;
-    let parentWidth = this.videoPlayer.clientWidth;
-    let newScroll = scrollFromParent - parentWidth;
+    let parentWidth = (this.videoPlayer.clientWidth)-(this.videoPlayer.clientWidth*(0.15));
+    let newScroll = (scrollFromParent - parentWidth);
     let fullScroll = this.videoPlayer.scrollWidth;
-    if (newScroll < 0) {
+    if (newScroll < -30) {
       this.videoPlayer.scrollTo({ left: fullScroll, behavior: 'smooth' });
     } else {
       this.videoPlayer.scrollTo({ left: newScroll, behavior: 'smooth' });

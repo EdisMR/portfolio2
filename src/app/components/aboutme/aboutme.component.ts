@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-aboutme',
   templateUrl: './aboutme.component.html',
-  styleUrls: ['./aboutme.component.scss']
+  styleUrls: ['./aboutme.component.scss'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class AboutmeComponent implements OnInit {
 
@@ -19,8 +20,6 @@ export class AboutmeComponent implements OnInit {
     {name:"Responsive Web Design",type:"green-border"},
     {name:"Angular",type:"green-border"},
     {name:"NodeJs",type:"green-border"},
-    {name:"React",type:"green-border"},
-    {name:"Vite Framework for React",type:"green-border"},
     {name:"Git",type:"green-border"},
     {name:"Github",type:"green-border"},
     {name:"Bootstrap",type:"green-border"},
@@ -29,6 +28,8 @@ export class AboutmeComponent implements OnInit {
     {name:"JSON",type:"green-border"},
     {name:"Ajax",type:"green-border"},
     {name:"JS REGEXP",type:"green-border"},
+    {name:"React",type:"yellow-border"},
+    {name:"Vite Framework for React",type:"yellow-border"},
     {name:"NestJs",type:"yellow-border"},
     {name:"PHP",type:"red-border"},
   ]

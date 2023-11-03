@@ -1,6 +1,8 @@
 # Portfolio2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+NodeJs 14.15.5 (14.15)
+Npm 6.14.11
+Angular 12.1.3
 
 ## Development server
 
