@@ -21,11 +21,19 @@ footer{
   cursor: pointer;
   transition: all .2s ease-in-out;
   &:hover{
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
-
+  &:active{
+    transform: scale(0.95);
+  }
 }
 
 .clickable{
   cursor: pointer;
+  transition: .2s;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+    color: #d5e600;
+  }
 }

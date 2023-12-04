@@ -29,7 +29,6 @@ export class AboutmeComponent implements OnInit {
     {name:"Ajax",type:"green-border"},
     {name:"JS REGEXP",type:"green-border"},
     {name:"React",type:"yellow-border"},
-    {name:"Vite Framework for React",type:"yellow-border"},
     {name:"NestJs",type:"yellow-border"},
     {name:"PHP",type:"red-border"},
   ]
@@ -40,6 +39,10 @@ export class AboutmeComponent implements OnInit {
   }[]=[
     {
       description:'Angular Frontend Developer at Mobile Marketing',
+      url:''
+    },
+    {
+      description:'Cards Dealer at Concorde Casino',
       url:''
     },
     {

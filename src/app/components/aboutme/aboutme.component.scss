@@ -9,12 +9,14 @@
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
+  max-width: 1265px;
 }
 
 .aboutimage {
   flex-basis: 20%;
   position: relative;
-  &::after{
+
+  &::after {
     position: absolute;
     top: -42px;
     left: -26px;
@@ -44,6 +46,7 @@
   padding: 20px;
   border-radius: 20px;
   letter-spacing: 0.45px;
+  max-width: 1265px;
 
   box-shadow: 20px 20px 60px #489dcf,
     -20px -20px 60px #62d5ff;
@@ -61,12 +64,18 @@
 
 /* Tecnologias */
 
+.content-size-correction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .tecnologias-antecedentes {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 100px;
+  max-width: 1265px;
 }
 
 .tecnologias {
@@ -121,6 +130,8 @@
   background-color: rgba(245, 233, 60, 0.158);
 }
 
+
+
 .tecnologias,
 .antecedentes {
   box-sizing: border-box;
@@ -144,6 +155,7 @@
   li {
     transition-duration: var(--globalTransitionDuration);
     padding-bottom: 7px;
+    border-radius: 6px;
 
     &:hover {
       background-color: var(--aboutmeAnchorColorHover);
