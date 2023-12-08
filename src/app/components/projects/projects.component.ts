@@ -15,20 +15,21 @@ export class ProjectsComponent implements OnInit {
   }
 
   videosNames: string[] = [
+    'assets/img/video(4).webm',
+    'assets/img/video(5).webm',
+    'assets/img/video(14).webm',
+    'assets/img/clock.av1.mp4',
+    'assets/img/video(9).webm',
     'assets/img/video(1).webm',
     'assets/img/video(2).webm',
     'assets/img/video(3).webm',
-    'assets/img/video(4).webm',
-    'assets/img/video(5).webm',
     'assets/img/video(6).webm',
     'assets/img/video(7).webm',
     'assets/img/video(8).webm',
-    'assets/img/video(9).webm',
-    'assets/img/video(10).webm',
+    'assets/img/video(13).webm',
     'assets/img/video(11).webm',
     'assets/img/video(12).webm',
-    'assets/img/video(13).webm',
-    'assets/img/video(14).webm',
+    'assets/img/video(10).webm',
   ]
 
   scrollNext(): void {
