@@ -116,6 +116,10 @@ export class AboutmeComponent implements OnInit {
     {
       description:"Screen recorder for Chrome, Windows",
       url:"https://edismr.github.io/screen-recorder/"
+    },
+    {
+      description:"I made the videos carousel in this page",
+      url:""
     }
   ]
 
