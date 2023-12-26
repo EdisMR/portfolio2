@@ -1,13 +1,18 @@
-import { ChangeDetectionStrategy, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss',],
-  changeDetection:ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit, AfterViewInit {
+
+  constructor(private elem: ElementRef) {
+    this.intersectionObserver()
+  }
+
 
   @ViewChildren('videoPlayer', { read: ElementRef }) videoPlayerSource!: QueryList<ElementRef>;
   private get videoPlayer() {
@@ -46,7 +51,7 @@ export class ProjectsComponent implements OnInit {
 
   scrollPrev(): void {
     let scrollFromParent = this.videoPlayer.scrollLeft;
-    let parentWidth = (this.videoPlayer.clientWidth)-(this.videoPlayer.clientWidth*(0.15));
+    let parentWidth = (this.videoPlayer.clientWidth) - (this.videoPlayer.clientWidth * (0.15));
     let newScroll = (scrollFromParent - parentWidth);
     let fullScroll = this.videoPlayer.scrollWidth;
     if (newScroll < -30) {
@@ -64,8 +69,36 @@ export class ProjectsComponent implements OnInit {
   }
 
 
+  observer!: IntersectionObserver;
 
-  constructor() { }
+  intersectionObserver() {
+    let options = { root: null, rootMargin: '0px', threshold: 0.5 };
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry: IntersectionObserverEntry) => {
+        if (!(entry.isIntersecting)) {
+          if (entry.target instanceof HTMLVideoElement) {
+            if (entry.target.paused === false) {
+              entry.target.pause();
+            }
+          }
+        }
+        if (entry.isIntersecting) {
+          if (entry.target instanceof HTMLVideoElement) {
+            if (entry.target.paused === true) {
+              entry.target.play();
+            }
+          }
+        }
+      })
+    }, options);
+  }
+
+  ngAfterViewInit() {
+    const elements = this.elem.nativeElement.querySelectorAll('.gallery video');
+    elements.forEach((element: HTMLVideoElement) => {
+      this.observer.observe(element)
+    })
+  }
 
   ngOnInit(): void {
   }
