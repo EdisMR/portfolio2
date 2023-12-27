@@ -78,14 +78,14 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         if (!(entry.isIntersecting)) {
           if (entry.target instanceof HTMLVideoElement) {
             if (entry.target.paused === false) {
-              entry.target.pause();
+              entry.target.pause()
             }
           }
         }
         if (entry.isIntersecting) {
           if (entry.target instanceof HTMLVideoElement) {
             if (entry.target.paused === true) {
-              entry.target.play();
+              entry.target.play().catch(e => { })
             }
           }
         }
