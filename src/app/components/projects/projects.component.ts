@@ -20,8 +20,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   }
 
   videosNames: string[] = [
-    'assets/img/video(4).webm',
-    'assets/img/video(5).webm',
+    'assets/img/Video(4).av1.mp4',
+    'assets/img/video(15).av1.mp4',
+    'assets/img/Video(5).AV1.mp4',
     'assets/img/video(14).webm',
     'assets/img/clock.av1.mp4',
     'assets/img/video(9).webm',

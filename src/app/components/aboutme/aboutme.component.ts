@@ -50,7 +50,7 @@ export class AboutmeComponent implements OnInit {
       url:'https://edismr.github.io/my-location/'
     },
     {
-      description:"Angular Roulette payment practice",
+      description:"Angular Dealer Training App",
       url:"https://edismr.github.io/canasta-builds/"
     },
     {
