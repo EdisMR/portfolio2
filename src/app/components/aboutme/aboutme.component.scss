@@ -16,20 +16,6 @@
   flex-basis: 20%;
   position: relative;
 
-  &::after {
-    position: absolute;
-    top: -42px;
-    left: -26px;
-    width: 80px;
-    height: 80px;
-    content: '';
-    background-image: url(^assets/img/navidad.webp);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    z-index: 100;
-  }
-
   img {
     border-radius: 20px;
     width: 100%;
@@ -37,6 +23,20 @@
     aspect-ratio: 1/1;
     pointer-events: none;
   }
+}
+
+.christmas-related-content::after {
+  position: absolute;
+  top: -42px;
+  left: -26px;
+  width: 80px;
+  height: 80px;
+  content: '';
+  background-image: url(^assets/img/navidad.webp);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 100;
 }
 
 .aboutContainer {

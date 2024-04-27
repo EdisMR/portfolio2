@@ -5,7 +5,7 @@ import { LoginService } from 'src/app/services/login.service';
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
-  changeDetection:ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MainPageComponent implements OnInit {
 
@@ -14,9 +14,7 @@ export class MainPageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
     this._loginSvc.loginRequest();
-
   }
 
 }

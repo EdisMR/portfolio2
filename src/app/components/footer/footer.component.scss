@@ -1,4 +1,4 @@
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +10,7 @@ footer{
   color: rgb(255, 255, 255);
 }
 
-#shareIconContainer{
+#shareIconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,19 +20,22 @@ footer{
   color: #fff;
   cursor: pointer;
   transition: all .2s ease-in-out;
-  &:hover{
+
+  &:hover {
     transform: scale(1.08);
   }
-  &:active{
+
+  &:active {
     transform: scale(0.95);
   }
 }
 
-.clickable{
+.clickable {
   cursor: pointer;
   transition: .2s;
   text-decoration: none;
-  &:hover{
+
+  &:hover {
     text-decoration: underline;
     color: #d5e600;
   }

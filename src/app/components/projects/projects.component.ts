@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 
 
 @Component({
@@ -7,7 +7,7 @@ import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, 
   styleUrls: ['./projects.component.scss',],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProjectsComponent implements OnInit, AfterViewInit {
+export class ProjectsComponent implements AfterViewInit {
 
   constructor(private elem: ElementRef) {
     this.intersectionObserver()
@@ -99,8 +99,5 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     elements.forEach((element: HTMLVideoElement) => {
       this.observer.observe(element)
     })
-  }
-
-  ngOnInit(): void {
   }
 }

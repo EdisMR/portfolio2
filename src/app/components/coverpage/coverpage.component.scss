@@ -1,17 +1,17 @@
-$assets:"assets/";
+$assets: "assets/";
 
-#coverpage{
+#coverpage {
   display: flex;
   align-items: center;
   height: 100vh;
-  color:var(--coverPageColor);
+  color: var(--coverPageColor);
   background-image: url("^assets/undraw_programming_re_kg9v.svg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.name{
+.name {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -20,14 +20,14 @@ $assets:"assets/";
   text-shadow: 0px 1px 15px #000000;
 }
 
-.name-title{
+.name-title {
   font-size: 60px;
   font-weight: 700;
   display: inline-block;
   max-width: 90vw;
 }
 
-.name-frontend{
+.name-frontend {
   font-size: 30px;
   font-family: input, monospace;
   white-space: break-spaces;
@@ -35,20 +35,20 @@ $assets:"assets/";
   max-width: 90vw;
 }
 
-@media (max-width:700px){
-  #coverpage{
+@media (max-width:700px) {
+  #coverpage {
     flex-direction: column;
     background-size: cover;
   }
 
-  .name{
+  .name {
     top: 70vh;
   }
 
-  .image-container{
-    figure{
-      img{
-        width:96vw;
+  .image-container {
+    figure {
+      img {
+        width: 96vw;
         height: auto;
       }
     }
