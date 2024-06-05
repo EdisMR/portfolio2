@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contacts',
@@ -12,13 +12,13 @@ export class ContactsComponent {
   email = 'ZWRpc2FudGhvbnlAZ21haWwuY29t'
 
   constructor(
-    private _formBuilder: FormBuilder
+    private _formBuilder: UntypedFormBuilder
   ) {
     this.buildForm()
   }
 
   public maxCharacters = 1000
-  public form!: FormGroup
+  public form!: UntypedFormGroup
   private buildForm(): void {
     this.form = this._formBuilder.group({
       subject: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(50)]],
