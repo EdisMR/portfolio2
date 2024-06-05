@@ -45,6 +45,7 @@ export class AboutmeComponent {
       { name: "ReactJS", type: "yellow-border" },
       { name: "NestJs", type: "yellow-border" },
       { name: "TypeOrm", type: "yellow-border" },
+      { name: "Linux", type: "yellow-border" },
       { name: "Adobe Photoshop", type: "yellow-border" },
       { name: "Adobe Premiere Pro", type: "yellow-border" },
       { name: "PHP", type: "red-border" },
@@ -64,12 +65,12 @@ export class AboutmeComponent {
         url: ''
       },
       {
-        description: 'My location coordinates - Get your location coordinates',
-        url: 'https://edismr.github.io/my-location/'
+        description: "Dealer Training App",
+        url: "https://edismr.github.io/canasta-builds/"
       },
       {
-        description: "Angular Dealer Training App",
-        url: "https://edismr.github.io/canasta-builds/"
+        description: 'My location coordinates - Get your location coordinates',
+        url: 'https://edismr.github.io/my-location/'
       },
       {
         description: "Material Design Internet Speed Calculator",
