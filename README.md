@@ -1,8 +1,9 @@
 # Portfolio2
 
-NodeJs 14.15.5 (14.15)
-Npm 6.14.11
-Angular 12.1.3
+Angular CLI: 18.0.3
+Node: 18.20.3
+Package Manager: npm 10.7.0
+OS: win32 x64
 
 ## Development server
 

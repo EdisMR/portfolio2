@@ -12,15 +12,18 @@
           <h3><span class="ms-Icon ms-Icon--Contact"></span>About me</h3>
         </div>
         <div class="abouttext">
-          I'm Edis Mercado Ruiz from San José, Costa Rica. I am a musicial and web developer; I'm' focused on the interfaces development
+          I'm Edis Mercado Ruiz from San José, Costa Rica. I am a musicial and web developer; I'm' focused on the
+          interfaces development
           for the end customer.<br>
           I started programming at Universidad Nacional de Costa Rica (UNA), where I acquired experience using
-          mathematics for programming, programming logic and the development strategies to solve a programming situation.<br>
+          mathematics for programming, programming logic and the development strategies to solve a programming
+          situation.<br>
           I entered to Instituto Nacional de Aprendizaje (INA), where I studied Adobe Photoshop, Microsoft Office,
           Access, and my passion for web development began since I entered to the Web Development program in this
           institution.<br>
           After studying fundamentals of web development, I continued training and learning specifically for
-          front-end web development through digital platforms, blogs, and learning to use tools and programming languages such as SASS,
+          front-end web development through digital platforms, blogs, and learning to use tools and programming
+          languages such as SASS,
           GIT, AJAX, Angular among others.<br>
           The majority of the knowledge I have gained is reflected in the list you see below.<br>
           You can contact me by the attached form at the bottom of the page.
@@ -41,9 +44,9 @@
         </div>
 
         <section class="tecno-items">
-          <ng-container *ngFor="let item of items">
-            <span [class]="item.type" class="tecno-item">{{item.name}}</span>
-          </ng-container>
+          @for(item of items; track item.name) {
+          <span [class]="item.type" class="tecno-item">{{item.name}}</span>
+          }
         </section>
         <section class="tecno-description">
           <div class="red-explanation"></div>
@@ -58,14 +61,19 @@
         </div>
         <div class="antecedentes-list-container">
           <ul>
-            <li *ngFor="let item of antecedentes">
-              <span *ngIf="item.url!='';else nourl">
-                <a [href]="item.url" target="_blank" rel="noopener noreferrer">{{item.description}}</a>
+            @for(item of antecedentes; track item.id) {
+            <li>
+              @if(item.url.length > 0) {
+              <span>
+                <a [href]="item.url" target="_blank" rel="noopener noreferrer">
+                  <span>{{item.description}}</span>
+                </a>
               </span>
-              <ng-template #nourl>
-                {{item.description}}
-              </ng-template>
+              } @else {
+              <span>{{item.description}}</span>
+              }
             </li>
+            }
           </ul>
         </div>
       </article>
