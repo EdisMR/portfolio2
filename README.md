@@ -1,9 +1,9 @@
 # Portfolio2
 
-Angular CLI: 18.0.3
-Node: 18.20.3
-Package Manager: npm 10.7.0
-OS: win32 x64
+- Angular CLI: 18.0.3
+- Node: 18.20.3
+- Package Manager: npm 10.7.0
+- OS: win32 x64
 
 ## Development server
 
