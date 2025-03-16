@@ -48,6 +48,9 @@ export class AboutmeComponent {
       { name: "Linux", type: "yellow-border" },
       { name: "Adobe Photoshop", type: "yellow-border" },
       { name: "Adobe Premiere Pro", type: "yellow-border" },
+      { name: "ASP .NET Core", type: "red-border" },
+      { name: "C#", type: "red-border" },
+      { name: "Visual Studio Community", type: "red-border" },
       { name: "PHP", type: "red-border" },
       { name: "SQL", type: "red-border" },
     ]

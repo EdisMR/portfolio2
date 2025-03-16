@@ -10,7 +10,7 @@
   scroll-snap-type: x mandatory;
   overflow: auto;
   border: 2px solid #4663d93d;
-  border-radius: 10px;
+  border-radius: 15px;
 
   /* scrollbar */
   &::-webkit-scrollbar {
@@ -20,13 +20,13 @@
   /* scrollbar Track */
   &::-webkit-scrollbar-track {
     background: #c0d4ffc5;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 
   /* Handle scrollbar */
   &::-webkit-scrollbar-thumb {
     background: #0993e1;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 
   /* Handle scrollbar on hover */
@@ -45,6 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(53, 53, 53, 0.808);
 }
 
 video {
@@ -75,11 +76,11 @@ video {
 }
 
 .gallery-control-left {
-  left: 0px;
+  left: 20px;
 }
 
 .gallery-control-right {
-  right: 0px;
+  right: 20px;
 }
 
 @media (max-width:700px) {
